@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  text-align: left;
+  border: 1px solid black;
+  margin: 20px auto;
+  padding-left: 30px;
+}
+
+.temp :last-child {
+  margin-bottom: 20px;
+}
+
+p {
+  font-weight: bold;
+}

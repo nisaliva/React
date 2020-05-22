@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+  background-color: rgb(224, 218, 212);
+}
+
+.container {
+  background-color: rgb(56, 53, 53);
+  display: flex;
+  flex-direction: row;
+}
+
+.container div {
+  margin: 50px;
+  width: calc((100% / 3)) 
+ } 
+
+.container h2, .counter h2{
+  margin: 10px 0;
+  color:  rgb(131, 113, 113);
+  font-size: 1.5rem;
+}
+
+.container p {
+  font-size: 1.2rem;
+  color:white
+}
+
+.counter button {
+  width: 100px;
+  height:40px;
+  font-size: 1.5 rem;
+}
+
+li {
+  list-style-type: none;
+  color:  rgb(134, 107, 124);
+  font-size: 1.5rem;
+  padding: 25px;
+}
+
+li:hover {
+  color: rgb(39, 8, 39);
+  cursor: pointer;
+}
