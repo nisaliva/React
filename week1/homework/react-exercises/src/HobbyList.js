@@ -11,9 +11,9 @@ function HobbyList() {
 
     return (
         <ul>
-            {hobbies.map(hobby=> (
-                <Hobby hobby = {hobby}/>
-            ))}
+           {hobbies.map((hobby,index) => {
+             return <Hobby hobby={hobby} key={index} />;
+           })}
         </ul>
     );
 }
