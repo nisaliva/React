@@ -20,7 +20,8 @@ function App() {
 
         if (res.status === 200) {
           const data = await res.json();
-          setCitiesWeather((cities) => [data, ...cities]);
+          const newData = [data, ...citiesWeather]
+          setCitiesWeather(newData);
         } else {
           throw Error('Oh no! There is an error.');
         }
@@ -39,12 +40,10 @@ function App() {
 
   const deleteCity = (id) => {
     setCitiesWeather((cities) => {
-      cities = cities.filter((x) => x.id !== id);
+      cities = cities.filter((city) => city.id !== id);
       return cities;
     });
   };
-
-  const cityWeather= citiesWeather.length !== 0;
 
   return (
     <div className="App">
@@ -52,13 +51,12 @@ function App() {
       <Form input={input} setInput={setInput} onSubmit={onSubmit} />
       {isLoading && <p> Loading... </p>}
       {error && <p> Oh no! There is an error. </p>}
-      {cityWeather &&
+      { citiesWeather.length !==0 &&
        citiesWeather.map((city) => (
         <div key={city.id}>
           <WeatherBox searchWeather={city}  deleteCity={deleteCity} />
-        </div>
+        </div> 
       ))}
-    
     </div>
   );
 }

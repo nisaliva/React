@@ -2,7 +2,6 @@ import React from "react";
 
 function WeatherBox({searchWeather, deleteCity }) {
 
-  if (searchWeather.cod === 200) {
     const {
       id,
       name,
@@ -35,10 +34,7 @@ function WeatherBox({searchWeather, deleteCity }) {
       </div>
     );
 
-  } else {
-    return <p> Please enter a correct city name </p>;
 
   }
 
-}
 export default WeatherBox;
