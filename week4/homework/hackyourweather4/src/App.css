@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  text-align: left;
+  border: 1px solid black;
+  margin: 50px auto;
+  padding-left: 30px;
+}
+
+.temp :last-child {
+  margin-bottom: 20px;
+}
+
+p {
+  font-weight: bold;
+}
+
+.btn, .search {
+  font-size: 1rem;
+  padding: 5px 20px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+.btn:hover {
+  cursor: grab;
+  background-color: rgba(88, 142, 167, 0.5);
+}
+
+.search {
+  width: 350px;
+  margin-right: 25px;
+}
+
+.selected {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deleteBtn {
+  margin-right: 50px;
+  border-radius: 50%;
+  align-self: center;
+  color: black;
+  background-color: #fff;
+  border: 3px solid black;
+  font-size: 25px;
+  font-weight: bold;
+}
